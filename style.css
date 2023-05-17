@@ -4,52 +4,159 @@ html{
 
 .head-h1{
     margin-left: 10px;
-    color: white;
-    background-color: #c22001;
-    width: 1200px;
+    color: #fff;
+    background-color: #e2000f;
+    width: 1310px;
+    margin-top: 0px;
+    padding-top: 10px;
     padding-left: 450px;
+    height: 70px;
     
 }
 .top{
-    background-color: white;
+    background-color: #e2000f;
     display: flex;
 }
 
 
 .head-logo img{
     width:130px;
-    height: 80px;   
+    height: 70px;   
 }
 
 body{
-    background-color: #fff;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background-color: #fff ;
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+  
+/* Radio Button */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.section2{
-    width:700px;
-    height:50px;
-    padding-left: 700px;
-    color: white;
-    background-color: #c22001;
-}
-
-.bottom-mang {
-    width: 216px;
-    height:335px;
-    display: flex;
-    /* background-color: whitesmoke; */
-    margin-left: 50px;
-    border-radius: 5px; 
+.slider{
     position: relative;
-    text-align: center;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    /* animation-name: bottomslide;
-    animation-duration: 4s;
-    animation-direction: reverse;
-    animation-play-state: running; */
+    width: 25%;
+    overflow: hidden;
+    margin-left: 540px;
+    margin-top: 30px;
+    border-radius: 2px;
+    /* border: solid 5px #c22001; */
+
 }
 
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    height: 300px;
+    width: 100%;
+    transition: all 0.15s ease;
+    margin-right: 230px;
+}
+
+.images input{
+    display: none;
+}
+
+.dots{
+    display: flex;
+    justify-content: centre;
+    margin: 25px;
+    margin-left: 100px;
+}
+
+.dots label{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: solid black;
+    cursor:pointer;
+    transition: all 0.15s ease;
+    margin-left:20px;
+    /* padding-left: 50px; */
+}
+
+.dots label:hover{
+    background-color:#fff;
+}
+
+#img1:checked ~ .m1{
+    margin-left:0%;
+}
+
+#img2:checked ~ .m2{
+    margin-left:-170%;
+}
+
+#img3:checked ~ .m3{
+    margin-left:-330%;
+}
+
+/* #img4:checked ~ .m4{
+    margin-left:-300%;
+} */
+
+
+/* GS-Towers */
+.section2 h1{
+    margin-left: 10px;
+    padding-left: 630px;
+    color: white;
+    background-color:#e2000f;
+    width:1450px;
+    height: 50px;
+}
+  
+.top5{
+    width:100%;
+    height:auto;
+    display: flex;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+.top5 img:hover{
+    scale: 1.2;
+}
+
+.top4 img:hover{
+    scale: 1.2;
+}
+
+.top4{
+    width:100%;
+    height:auto;
+    display: flex;
+    margin-left: 260px;
+    margin-top: 10px;
+}
+
+.sqbox img{
+    width:215px;
+    height: 240px;
+    background-color: #fff;
+    margin:1px;
+    
+}
+
+.sqbox p{
+    background-color: #e2000f;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    font-weight:bolder;
+    font-size:larger;
+    padding-left: 30px;
+    padding-top: 3px;
+    align-items: center;
+   transform: translate(4%,-150%);
+}
+
+/* Moving effect of tower leads */
 .fluid{
     height:auto;
     max-width: 100%;
@@ -59,182 +166,4 @@ body{
     margin-bottom: 1.5rem !important;
 }
 
-.towerleads-header{
-    background-color: #c22001;
-    color: #fff;
-    padding-left: 700px;
-}
-    
-
-/* .bottom-lead{
-    /* box-sizing: border-box;
-    height: 320px;
-    width: 300px;
-
-    display: block;
-    -webkit-tap-highlight-color: rgba(139, 52, 52, 0); */
-       
-
-@keyframes bottomslide{
-    from {margin-top: 1px}
-    to {margin-top: 100px}
-}
-
-.bottom-mang img{
-    width: 230px;
-    height:200px;
-    border-radius: 5px;
-}
-
-.bottom-mang p{
-    margin-left: 100px;
-}
-
-
-.manager{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-}
-
-.left img{
-    width: 200px;
-    height: 200px;
-    border:solid black;
-    border-radius: 15px;
-    margin: 10px;
-    background-color: #bfbdc0;
-}
-
-.right img{
-    width: 200px;
-    height: 200px;
-    border:solid black;
-    border-radius: 15px;
-    margin: 10px;
-    background-color: #bfbdc0;
-    
-}
-
-.centre p{
-    opacity: 0;
-}
-
-.centre-leader :hover p{
-    position: relative;
-    opacity: 1;
-    transform: translate(45%,-600%);
-    scale: 2.5;
-    color: red;
-}
-
-/* Hover effect on GS Towers */
-.left img:hover{
-    opacity: 0.3;
-    scale: 1.1;
-    z-index: -1;
-    
-}
-
-.right img:hover{
-    opacity: 0.9;
-    scale: 1.1;
-}
-
-.centre img:hover{
-    opacity: 0.1;
-    scale: 1.1;
-    z-index: -1;
-}
-
-
-.centre img{
-    width: 400px;
-    height: 460px;
-    border:solid black;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #bfbdc0;
-}
-
-.left-leader{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-    margin-top: 30px;
-    
-    
-}
-
-.centre-leader{
-    width: 400px;
-    height: 500px;
-    display: flex;
-    flex-wrap:wrap;
-    align-items:center;
-    justify-items: center;
-    margin-top: 30px;
-    
-}
-
-.right-leader{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    margin-top: 30px;
-}
-
-/* Middle part slider effects */
-#slider{
-    background-color: white;
-    overflow: hidden;
-    height: 400px;
-    width: 1200px;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-#slider .figure-leader{
-    position: relative;
-    width: 400%;
-    margin-left:10px;
-    left:0;
-    animation: 22s slider infinite;
-}
-
-#slider .figure-leader img{
-    float:left;
-    width: 20%;
-}
-
-.images{
-    margin-left: 20px;
-}
-
-@keyframes slider{
-    0%{
-        left:0%;
-    }
-    10%{
-        left:0%;
-    }
-    20%{
-        left: -70%;
-    }
-
-    30%{
-        left: -160%;
-    }
-    40%{
-        left: -280%;
-    }
-    100%{
-        left:0%
-    }
-
-}
 
