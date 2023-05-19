@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Website Layout</title>
+<title>Home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,7 +46,7 @@ body {
 /* Style the header */
 .header {
   top: 0;
-  background-color:white1c24;  
+  background-color:white;  
   text-align: center;
   color:#ed1c24;  
   margin-bottom: 20px;  
@@ -66,8 +66,8 @@ body {
   width:25%;
 }
 .one_digital{
-  font-size:14px;
-  font-style:italic;  
+  font-size:16px;
+ font-style: bold;  
   width:75%
  }
  .tiny_line{
@@ -78,7 +78,7 @@ body {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  height:5px;
+  height:2px;
   background-color:gray;
    
  }
@@ -88,10 +88,8 @@ body {
   margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  height:75px;
-  background-color:  #ed1c24;  ;
+  height:25px;
+  background-color:  white;  
   color:white;
   text-align: center;
   font-family: sans-serif;
@@ -134,23 +132,20 @@ body {
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
-  background: #353535;
-  font-size: 3rem;
-  color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  background: white;
   height: 100%;
   width: 100%;
   border-radius: 4px;
   transition: all 500ms;
   overflow: hidden;
-  background-size: cover;
+  background-size: flex;
   background-position: center;
   background-repeat: no-repeat;
   padding: 0;
-  margin: 0;
+  margin: 0;  
 }
 
 @media screen and (min-width: 600px) {
@@ -170,8 +165,23 @@ body {
   clear: both;  
 }
 
+.foot{
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  height:50px;
+  background-color:  #ed1c24;  
+  color:white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-top: 12px;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:1920px) {
+@media screen and (min-width:600px) {
   .column {
     width: 100%;
   }
@@ -218,6 +228,10 @@ body {
       <div class="item">
         <img src="Canva/3.jpg" style="width:100%;">
       </div>
+
+      <div class="item">
+        <img src="Canva/4.jpg" style="width:100%;">
+      </div>
     </div>
 
     <!-- Left and right controls -->
@@ -233,54 +247,64 @@ body {
 </div>
 
 <div class="row">
-  <div class="middle_line">GS Towers</div>
+  <div class="middle_line"></div>
 </div>
 
-<div class="container reveal" style="margin-top:50px;">
-  <div class="image-mosaic">
-    <div
-      class="card card-tall card-wide"
-      style="background-image: url('https://picsum.photos/id/564/1200/800')"
-    ></div>
-    <div
-      class="card card-tall"
-      style="background-image: url('https://picsum.photos/id/566/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/575/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/626/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/667/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/678/800/530')"
-    ></div>
-    <div
-      class="card card-wide"
-      style="background-image: url('https://picsum.photos/id/695/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/683/800/530')"
-    ></div>
-    <div
-      class="card"
-      style="background-image: url('https://picsum.photos/id/693/800/530')"
-    ></div>
+<div class="container reveal" style="margin-top:50px;margin-bottom:50px;">
+  <div class="image-mosaic" style="box-shadow: 5px 5px 4px #ccc;">
+    <div class="card card-tall card-wide">
+      <div class="inner"> <a href="GCS.html">
+        <img src="Canva/GCS_Link.png" style="width:100%;height:100%;"> </a>
+      </div>      
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/P2P_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/O2C_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/EHS_ADMIN_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/Real_Estate_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/Contolling_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card card-wide card-tall">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/PM_Office_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card card-tall">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/GS_Pro_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="inner"> <a href="www.google.com">
+        <img src="Canva/R2R_Link.png" style="width:100%;height:100%;"> </a>
+      </div>
+    </div>
     
   </div>
 </div>
 
 <!-- Gallery -->
-
-
+<div class="row">
+  <div class="foot"></div>
+</div>
 
 </body>
 </html>
